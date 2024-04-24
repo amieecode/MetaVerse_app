@@ -10,20 +10,33 @@ const Banner2 = ({ togglePlay }) => {
                 {/* Banner Text section */}
                 <div className='order-2 sm:order-1 lg:pr-20 relative'>
                   <div className='relative z-10 space-y-5 '>
-                     <h1 className='text-4xl font-semibold'>
+                     <h1
+                        data-aos="fade-up" 
+                        data-aos-delay="300" 
+                        className='text-4xl font-semibold'
+                      >
                         GET READY TO ENJOY VR{" "}
                         <span className='bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary'>
                             Movies WITH OUR PLATFORM
                         </span>
                      </h1>
-                     <p>
+                     <p
+                        data-aos="fade-up" 
+                        data-aos-delay="500"
+                     >
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nam quam ipsa similique saepe fuga porro ullam reprehenderit omnis eius?
                      </p>
                      <div className='flex gap-6'>
-                        <button className='primary-btn'>
+                        <button
+                            data-aos="fade-up" 
+                            data-aos-delay="700" 
+                            className='primary-btn'
+                        >
                             Get Started
                         </button>
-                        <button 
+                        <button
+                            data-aos="fade-up" 
+                            data-aos-delay="900" 
                             onClick={togglePlay} 
                             className='flex items-center gap-2'
                         >
@@ -39,7 +52,10 @@ const Banner2 = ({ togglePlay }) => {
                 </div>
 
                 {/* Banner Image */}
-                <div className='order-1 sm:order-2'>
+                <div 
+                    data-aos="fade-up"
+                    className='order-1 sm:order-2'
+                >
                     <img 
                         src={BannerImage} 
                         alt="Banner Images" 

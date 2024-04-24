@@ -34,7 +34,7 @@ const Footer = () => {
   return (
     <>
       <div className="bg-gray-100 dark:bg-dark mt-14 rounded-t-3xl">
-        <div className='container'>
+        <div data-aos="fade" className='container'>
             <div className='grid md:grid-cols-3 py-4'>
                {/* Company Details */} 
                <div className='py-8 px-4'>

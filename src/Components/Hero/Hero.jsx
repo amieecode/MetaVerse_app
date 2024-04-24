@@ -8,19 +8,21 @@ const Hero = ({ togglePlay }) => {
       <div className="container min-h-[700px] flex relative">
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center z-10 relative'>
                 {/* Hero text section */}
-                <div className='order-2 sm:order-1 space-y-5 lg:pr-20'>
-                    <h1 className='text-4xl font-semibold'>
+                <div className='order-2 sm:order-1 space-y-5 lg:pr-20 relative z-30'>
+                    <h1 data-aos="fade-up"  className='text-4xl font-semibold'>
                         GET READY TO ENJOY VR{" "}
                         <span className='bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary'>
                             GAMES WITH OUR PLATFORM
                         </span>
                     </h1>
-                    <p className=''>
+                    <p data-aos="fade-up" data-aos-delay="300">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Id expedita voluptatum esse, alias fugit maiores dignissimos porro nam nemo officiis.
                     </p>
                     <div className='flex gap-6'>
-                        <button className='primary-btn'>Get Started</button>
-                        <button 
+                        <button data-aos="fade-up" data-aos-delay="500" className='primary-btn'>Get Started</button>
+                        <button
+                          data-aos="fade-up" 
+                          data-aos-delay="700" 
                           onClick={togglePlay} 
                           className='flex items-center gap-2'
                         >
@@ -31,7 +33,7 @@ const Hero = ({ togglePlay }) => {
                     </div>
                 </div>
                  {/* image section */}
-                <div className='order-1 sm:order-2'>
+                <div data-aos="fade-up" data-aos-offset="0" className='order-1 sm:order-2'>
                     <img 
                         src={HeroImg} 
                         alt="Hero Image" 
