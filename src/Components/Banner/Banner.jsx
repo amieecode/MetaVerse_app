@@ -16,8 +16,8 @@ const Banner = () => {
                     />
                 </div>
                 {/* Banner text section */}
-                <div className='space-y-5 lg:pr-20 relative'>
-                  <div>
+                <div className='lg:pr-20 relative'>
+                  <div className='relative z-10 space-y-5'>
                     <h1 className='text-4xl font-semibold'>
                         GET READY TO ENJOY VR{" "}
                         <span className='bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary'>
