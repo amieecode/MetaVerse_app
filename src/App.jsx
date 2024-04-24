@@ -5,6 +5,7 @@ import Quotes from './Components/Quotes/Quotes';
 import Banner from './Components/Banner/Banner';
 import Banner2 from './Components/Banner/Banner2';
 import Features from './Components/Features/Features';
+import AppStore from './Components/AppStore/AppStore';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Banner />
       <Banner2 />
       <Features />
+      <AppStore />
     </main>
   )
 }
