@@ -2,7 +2,7 @@ import React from 'react';
 import HeroImg from  "../../assets/hero.png";
 import { BiPlayCircle } from 'react-icons/bi';
 
-const Hero = () => {
+const Hero = ({ togglePlay }) => {
   return (
     <div className='py-12 sm:py-0 dark:bg-black dark:text-white duration-300 overflow-hidden'>
       <div className="container min-h-[700px] flex relative">
@@ -20,7 +20,10 @@ const Hero = () => {
                     </p>
                     <div className='flex gap-6'>
                         <button className='primary-btn'>Get Started</button>
-                        <button className='flex items-center gap-2'>
+                        <button 
+                          onClick={togglePlay} 
+                          className='flex items-center gap-2'
+                        >
                           {" "}
                           <BiPlayCircle className='text-3xl' />
                           See Demo
