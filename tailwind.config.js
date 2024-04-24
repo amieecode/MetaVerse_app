@@ -10,15 +10,15 @@ export default {
       fontFamily: {
         montserrat: ["montserrat", "sans-serif"],
       },
-      color: {
-        primary:"#00C2FF",
+      colors: {
+        primary: "#00C2FF",
         secondary: "#DD0BFF",
         dark: "#111111"
       },
       container: {
         center: true,
         padding: {
-          Default: "1rem",
+          DEFAULT: "1rem",
           sm: "3rem",
         },
       },
