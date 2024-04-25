@@ -28,7 +28,11 @@ const NavLinks = [
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = React.useState(false);
-    const toggleMenu = () => setShowMenu(!showMenu);
+
+    const toggleMenu = () => {
+      setShowMenu(!showMenu)
+    };
+
   return (
     <div className='relative z-[9999] text-black dark:text-white duration-300'>
       <div className="container py-2 md:py-0">
@@ -80,8 +84,26 @@ const Navbar = () => {
             </div>
        </div>
       </div>
+
+      {/* ResponsiveMenu */}
+           <div className={`${ showMenu ? "left-0": "-left-[100%]"} fixed bottom-0 top-0 z-10 flex h-screen w-[75%] flex-col justify-between bg-white
+               px-8 pb-6 pt-12 text-black transition-all duration-200 md:hidden rounded-r-xl shadow-md dark:bg-black dark:text-white`}
+           >
+         {/* Nav Section*/}
+        <div className='mt-4'>
+          <ul className="space-y-4  text-xl">
+             { NavLinks.map(({id, name, link}) => {
+                  return(
+                      <li key={id} className='py-4'>
+                          <a href={link} className='text-xl font-semibold hover:text-primary py-2 hover:border-b-2 hover:border-secondary transition-colors duration-500'>{name}</a>
+                      </li>
+                  );
+              })}
+          </ul>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Navbar;
