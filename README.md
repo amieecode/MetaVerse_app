@@ -1,6 +1,6 @@
 # MetaVerse App
 
-This project is a cMetaVerse App built with React and Vite. It features a landing page with information about MeteVerse and its reality.
+This project is a MetaVerse landing page built with React Vite. It features a landing page with information about MeteVerse and its reality.
 
 ## Features
 
