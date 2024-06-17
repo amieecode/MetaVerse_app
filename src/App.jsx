@@ -10,6 +10,7 @@ import Footer from './Components/Footer/Footer';
 import PopupPlayer from './Components/PopupPlayer/PopupPlayer';
 import  AOS from "aos";
 import "aos/dist/aos.css";
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   const [isPlay, setIsPlay] = useState(false);
@@ -41,6 +42,7 @@ const App = () => {
 
       {/*Video Player*/}
       <PopupPlayer isPlay={isPlay} togglePlay={togglePlay}/>
+      <Analytics />
     </main>
   )
 }
